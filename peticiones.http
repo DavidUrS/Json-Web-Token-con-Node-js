@@ -1,0 +1,15 @@
+GET http://localhost:3000/api/user HTTP/1.1
+
+###
+
+GET http://localhost:3000/api/user HTTP/1.1
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjVhMzdmMTY2NzJlZDgwMzVhYzBkMDUxZCIsIm5hbWUiOiJNYXJ5IiwicGFzc3dvcmQiOiIxMjMiLCJhZG1pbiI6dHJ1ZSwiX192IjowfSwiaWF0IjoxNTEzNjE2NTY3fQ.OnttCCdAZBhBwldwbkfq6pY60LXb5iPW2JX5a7zUcQk
+###
+
+POST http://localhost:3000/api/authenticate HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Mary",
+    "password": "123"
+}
